@@ -10,12 +10,6 @@
             <a class="nav-link {{ ($title === "Home") ? 'active' : '' }}" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{ ($title === "Login") ? 'active' : '' }}" href="/Login">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {{ ($title === "Sign-up") ? 'active' : '' }}" href="/Sign-up">Sign-up</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link {{ ($title === "Marketplace") ? 'active' : '' }}" href="/Marketplace">Market Place</a>
           </li>
           <li class="nav-item">
@@ -25,6 +19,15 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a href="/Login" class="nav-link">Login</a>
+            <li class="nav-item">
+            <a href="/Sign-up" class="nav-link" >Sign-up</a>
+          </li>
+          </li>
+          
         </ul>
       </div>
     </div>

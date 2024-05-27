@@ -22,7 +22,8 @@
         </ul>
         <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-            <a href="/Login" class="nav-link">Login</a>
+            <a href="/Login" class="nav-link {{ ($title === "Kursus") ? 'active' : '' }}"><i class="bi bi-box-arrow-in-right"></i> 
+              Login</a>
             <li class="nav-item">
             <a href="/Sign-up" class="nav-link" >Sign-up</a>
           </li>

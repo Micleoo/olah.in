@@ -35,3 +35,6 @@ Route::get('/Marketplace', function () {
     return view('Marketplace', ["title" => "Marketplace"]);
 });
 
+Route::get('/Keranjang', function () {
+    return view('Keranjang', ["title" => "Keranjang"]);
+});

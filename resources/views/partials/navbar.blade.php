@@ -15,10 +15,6 @@
           <li class="nav-item">
             <a class="nav-link {{ ($title === "Kursus") ? 'active' : '' }}" href="/Kursus">Kursus</a>
           </li>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </ul>
         <ul class="navbar-nav ms-auto">
         <li class="nav-item">
@@ -26,6 +22,9 @@
               Login</a>
             <li class="nav-item">
             <a href="/Sign-up" class="nav-link" >Sign-up</a>
+            <li class="nav-item">
+            <a href="/Keranjang" class="nav-link {{ ($title === "Keranjang") ? 'active' : '' }}"><i class="bi bi-cart"></i></a>
+          </li>
           </li>
           </li>
           

@@ -21,11 +21,7 @@ Route::get('/', function () {
 
 Route::get('/Login', [LoginController::class, 'index']);
 
-Route::get('/register', [RegisterController::class, 'index']);
-
-Route::get('/Sign-up', function () {
-    return view('Sign-up', ["title" => "Sign-up"]);
-});
+Route::get('/Sign-up', [RegisterController::class, 'index']);
 
 Route::get('/Kursus', function () {
     return view('Kursus', ["title" => "Kursus"]);

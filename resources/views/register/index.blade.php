@@ -4,7 +4,7 @@
 <div class="row justify-content-center">
   <div class="col-md-5">
     <main class="form-registration w-100 m-auto">
-      <h1 class="h3 mb-3 fw-normal text-center">Registration Form</h1>
+      <h1 class="h3 mb-3 fw-normal text-center">Sign up</h1>
       <form>
         <div class="form-floating">
           <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -16,9 +16,9 @@
         </div>
     
 
-        <button class="btn btn-primary w-100 py-2" type="submit">Login</button>
+        <button class="btn btn-primary w-100 py-2" type="submit">Sign up</button>
       </form>
-      <small class="d-block text-center mt-3">Not Registered? <a href="/register">Register Now!</a></small>
+      <small class="d-block text-center mt-3">Sudah punya akun? <a href="/Login">login</a></small>
     </main>
 
   </div>

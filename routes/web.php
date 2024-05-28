@@ -19,6 +19,19 @@ Route::get('/', function () {
     return view('Home', [ "title" => "Home"]);
 });
 
+Route::get('/', function () {
+    return view('Home', [ "title" => "Home"]);
+})->name('home');
+
+Route::get('/marketplace', function () {
+    return view('Marketplace', ["title" => "Marketplace"]);
+})->name('marketplace');
+
+Route::get('/kursus', function () {
+    return view('kursus', ["title" => "Kursus"]);
+})->name('kursus');
+
+
 Route::get('/Login', [LoginController::class, 'index']);
 
 Route::get('/Sign-up', [RegisterController::class, 'index']);

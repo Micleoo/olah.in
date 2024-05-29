@@ -36,6 +36,7 @@ Route::get('/kursus', function () {
 Route::get('/Login', [LoginController::class, 'index']);
 
 Route::get('/Sign-up', [RegisterController::class, 'index']);
+Route::post('/Sign-up', [RegisterController::class, 'store']);
 
 Route::get('/Kursus', function () {
     return view('Kursus', ["title" => "Kursus"]);

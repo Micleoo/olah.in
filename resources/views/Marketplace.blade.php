@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,10 +14,6 @@
 
 
 @section('container')
-<<<<<<< HEAD
-    <h1> Market Place </h1>
-@endsection
-=======
 
 
 <section id="All products" style="margin-top:50px">
@@ -69,4 +62,3 @@
 
 </body>
 </html>
->>>>>>> 369ada8fe3fab7a710abb1636403876bb16c6dfa

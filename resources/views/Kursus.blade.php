@@ -29,66 +29,48 @@
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
+                            <img src="{{ asset('images/Celengan-botol-plastik.webp') }}" class="card-img-1"
+                                alt="Celengan Botol Plastik" width="100%" height="225">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text">"Celengan dari Botol Plastik Bekas"! Dalam
+                                    kursus ini, kita akan belajar bagaimana mengubah botol plastik bekas menjadi celengan
+                                    yang cantik dan fungsional. .</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Tutorial</button>
                                     </div>
-                                    <small class="text-body-secondary">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
+                            <img src="{{ asset('images/Pot-botol-plastik.webp') }}" class="card-img-2"
+                                alt="Pot Botol Plastik" width="100%" height="225">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text">"Mengolah Botol Plastik Bekas Menjadi Pot"!
+                                    Dalam kursus ini, Anda akan belajar bagaimana memanfaatkan botol plastik bekas menjadi
+                                    pot tanaman yang menarik dan fungsional..</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Tutorial</button>
                                     </div>
-                                    <small class="text-body-secondary">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
+                            <img src="{{ asset('images/Hiasan-gantung-plastik.jpg') }}" class="card-img-3"
+                                alt="Hiasan gantung Plastik" width="100%" height="225">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text">"Hiasan Gantung dari Plastik Tak Terpakai"! Dalam artikel ini, kita
+                                    akan membahas cara seru dan kreatif untuk mendaur ulang botol plastik bekas menjadi
+                                    hiasan gantung yang cantik..</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Tutorial</button>
                                     </div>
-                                    <small class="text-body-secondary">9 mins</small>
                                 </div>
                             </div>
                         </div>
@@ -96,66 +78,49 @@
 
                     <div class="col">
                         <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                    dy=".3em">Thumbnail</text>
-                            </svg>
+                            <img src="{{ asset('images/Tas-plastik-bekas.jpg') }}" class="card-img-4"
+                                alt="Tas Plastik bekas" width="100%" height="225">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">Dalam dunia fashion yang terus berkembang, tas dari bahan plastik bekas
+                                    menjadi tren baru yang menarik perhatian. Bahan plastik bekas dari kemasan makanan,
+                                    detergen, pewangi pakaian, bungkus kopi instan, dan sebagainya.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Tutorial</button>
+
                                     </div>
-                                    <small class="text-body-secondary">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
+                            <img src="{{ asset('images/Tempat-pensil-plastik.jpg') }}" class="card-img-5"
+                                alt="Tempat pensil dari plastik bekas" width="100%" height="225">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">"Tempat Pensil dari Plastik Bekas"! Dalam dunia yang semakin sadar akan
+                                    pentingnya keberlanjutan, mendaur ulang plastik bekas menjadi berbagai barang fungsional
+                                    dan menarik adalah langkah kecil yang dapat membawa dampak besar.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Tutorial</button>
                                     </div>
-                                    <small class="text-body-secondary">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card shadow-sm">
-                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
+                            <img src="{{ asset('images/Gantungan-kunci.jpg') }}" class="card-img-6" alt="Gantungan Kunci"
+                                width="100%" height="225">
                             <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">"Gantungan Kunci dari Plastik Bekas"! Dalam upaya mengurangi limbah
+                                    plastik dan mendukung keberlanjutan lingkungan, mendaur ulang plastik bekas menjadi
+                                    barang-barang berguna dan dekoratif adalah pilihan yang tepat.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Tutorial</button>
                                     </div>
-                                    <small class="text-body-secondary">9 mins</small>
                                 </div>
                             </div>
                         </div>
@@ -173,8 +138,7 @@
             document.querySelector('#cta-btn').addEventListener('click', function(event) {
                 event.preventDefault();
                 var articleSection = document.getElementById('article-section');
-                articleSection.style.display = 'block'; // Tampilkan bagian artikel
-                // Gulir ke bagian artikel dengan efek animasi
+                articleSection.style.display = 'block';
                 articleSection.scrollIntoView({
                     behavior: 'smooth'
                 });

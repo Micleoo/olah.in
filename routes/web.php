@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\RegisterController;
-
+use App\Http\Controllers\KursusController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,6 +27,15 @@ Route::get('/', function () {
 Route::get('/marketplace', function () {
     return view('Marketplace', ["title" => "Marketplace"]);
 })->name('marketplace');
+
+Route::get('/', function () {
+    return view('home', ["title" => "Home"]);
+})->name('home');
+
+Route::get('/kursus', [KursusController::class, 'index'])->name('kursus');
+Route::get('/kursus/{id}', [KursusController::class, 'show'])->name('kursus.show');
+
+
 
 Route::get('/kursus', function () {
     return view('kursus', ["title" => "Kursus"]);

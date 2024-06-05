@@ -20,24 +20,24 @@
                 </div>
             </div>
         </section>
-
-
         <!-- article -->
         <div id="article-section" class="album py-5 bg-body-tertiary">
+            <h2 style="text-align: center; margin-bottom: 4rem;">Article</h2>
             <div class="container">
 
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card shadow-sm">
-                            <img src="{{ asset('images/Celengan-botol-plastik.webp') }}" class="card-img-1"
+                            <img src="{{ asset('images/celengan-botol-plastik.webp') }}" class="card-img-1"
                                 alt="Celengan Botol Plastik" width="100%" height="225">
                             <div class="card-body">
-                                <p class="card-text">"Celengan dari Botol Plastik Bekas"! Dalam
-                                    kursus ini, kita akan belajar bagaimana mengubah botol plastik bekas menjadi celengan
-                                    yang cantik dan fungsional. .</p>
+                                <p class="card-text">"Celengan dari Botol Plastik Bekas"! Dalam kursus ini, kita akan
+                                    belajar bagaimana mengubah botol plastik bekas menjadi celengan yang cantik dan
+                                    fungsional.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Tutorial</button>
+                                        <a href="{{ route('kursus.show', 1) }}"
+                                            class="btn btn-sm btn-outline-secondary">Tutorial</a>
                                     </div>
                                 </div>
                             </div>
@@ -48,17 +48,19 @@
                             <img src="{{ asset('images/Pot-botol-plastik.webp') }}" class="card-img-2"
                                 alt="Pot Botol Plastik" width="100%" height="225">
                             <div class="card-body">
-                                <p class="card-text">"Mengolah Botol Plastik Bekas Menjadi Pot"!
-                                    Dalam kursus ini, Anda akan belajar bagaimana memanfaatkan botol plastik bekas menjadi
-                                    pot tanaman yang menarik dan fungsional..</p>
+                                <p class="card-text">"Mengolah Botol Plastik Bekas Menjadi Pot"! Dalam kursus ini, Anda akan
+                                    belajar bagaimana memanfaatkan botol plastik bekas menjadi pot tanaman yang menarik dan
+                                    fungsional.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Tutorial</button>
+                                        <a href="{{ route('kursus.show', 2) }}"
+                                            class="btn btn-sm btn-outline-secondary">Tutorial</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="col">
                         <div class="card shadow-sm">
                             <img src="{{ asset('images/Hiasan-gantung-plastik.jpg') }}" class="card-img-3"
@@ -69,7 +71,8 @@
                                     hiasan gantung yang cantik..</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Tutorial</button>
+                                        <a href="{{ route('kursus.show', 3) }}"
+                                            class="btn btn-sm btn-outline-secondary">Tutorial</a>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +89,8 @@
                                     detergen, pewangi pakaian, bungkus kopi instan, dan sebagainya.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Tutorial</button>
+                                        <a href="{{ route('kursus.show', 4) }}"
+                                            class="btn btn-sm btn-outline-secondary">Tutorial</a>
 
                                     </div>
                                 </div>
@@ -103,7 +107,8 @@
                                     dan menarik adalah langkah kecil yang dapat membawa dampak besar.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Tutorial</button>
+                                        <a href="{{ route('kursus.show', 5) }}"
+                                            class="btn btn-sm btn-outline-secondary">Tutorial</a>
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +124,8 @@
                                     barang-barang berguna dan dekoratif adalah pilihan yang tepat.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Tutorial</button>
+                                        <a href="{{ route('kursus.show', 6) }}"
+                                            class="btn btn-sm btn-outline-secondary">Tutorial</a>
                                     </div>
                                 </div>
                             </div>
@@ -128,6 +134,45 @@
                 </div>
             </div>
         </div>
+
+        <h2 style="text-align: center; margin-bottom: 4rem;">Video Tutorial</h2>
+        <article class="course">
+            <div class="course_video" style="text-align: center; margin-bottom: 4rem;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nOjx2oCrCDs" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="course_info">
+                <h4>Pot Bunga Bundar</h4>
+                <p>Ide Kreatif Cara Membuat Pot Bunga Bundar Dari Botol Bekas AQUA</p>
+            </div>
+        </article>
+
+        <article class="course">
+            <div class="course_video" style="text-align: center; margin-bottom: 4rem;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qQcIc-1igSI?si=o1LbBB_IzHCqPmgX"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="course_info">
+                <h4>Rak Gantung & Tempat Pensil</h4>
+                <p>mendaur ulang barang-barang bekas menjadi kreasi baru yang fungsional</p>
+            </div>
+        </article>
+
+        <article class="course">
+            <div class="course_video" style="text-align: center; margin-bottom: 4rem;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-LfblXD9eYE" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="course_info">
+                <h4>Tas dari Botol Plastik</h4>
+                <p>mendaur ulang bahan-bahan yang biasanya dianggap sebagai limbah menjadi barang yang fungsional dan
+                    stylish</p>
+            </div>
+        </article>
 
     </main>
 @endsection

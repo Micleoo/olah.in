@@ -34,6 +34,7 @@ Route::get('/kursus', function () {
 
 
 Route::get('/Login', [LoginController::class, 'index']);
+Route::post('/Login', [LoginController::class, 'authenticate']);
 
 Route::get('/Sign-up', [RegisterController::class, 'index']);
 Route::post('/Sign-up', [RegisterController::class, 'store']);

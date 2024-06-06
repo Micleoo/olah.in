@@ -12,7 +12,7 @@
   @endif
     <main class="form-signin w-100 m-auto">
       <h1 class="h3 mb-3 fw-normal text-center">Login</h1>
-      <form> action="/login" method="post">
+      <form action="/login" method="post">
         @csrf
         <div class="form-floating">
           <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" autofocus required>

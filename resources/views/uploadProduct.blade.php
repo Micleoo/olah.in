@@ -25,25 +25,25 @@
                 @csrf
                 <div class="mb-5">
                     <label for="nama_produk" class="form-label">Nama produk</label>
-                    <input type="text" class="form-control" id="nama_produk" name="nama_produk" placeholder="Masukan nama produk kamu" required>
+                    <input type="text" class="form-control" id="nama_produk" name="nama_produk" placeholder="Masukan nama produk " required>
                 </div>
                 <!-- Tambahkan area pratinjau gambar -->
                 <div class="mb-5">
                     <label for="foto_produk" class="form-label">foto produk</label>
 
-                    <input type="file" class="form-control" id="foto_produk" name="foto_produk" placeholder="Masukan foto produk kamu" required>
+                    <input type="file" class="form-control" id="foto_produk" name="foto_produk" placeholder="Masukan foto produk" required>
 
 
                 </div>
 
                 <div class="mb-5">
                     <label for="deskripsi" class="form-label">Deskripsi Produk</label>
-                    <textarea class="form-control" id="deskripsi" name="deskripsi" rows="3" placeholder="Masukkan deskripsi produkmu jancok" required></textarea>
+                    <textarea class="form-control" id="deskripsi" name="deskripsi" rows="3" placeholder="Masukkan deskripsi produk" required></textarea>
                 </div>
 
                 <div class="mb-5">
                     <label for="harga" class="form-label">Harga produk</label>
-                    <input type="number" class="form-control" id="harga" name="harga" placeholder="Masukan harga produkmu" required>
+                    <input type="number" class="form-control" id="harga" name="harga" placeholder="Masukan harga produk" required>
                 </div>
 
                 <div class="mb-5">

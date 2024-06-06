@@ -13,6 +13,7 @@ class CreateProdukTable extends Migration
      */
     public function up()
     {
+        
         Schema::create('produk', function (Blueprint $table) {
             $table->id();
             $table->string('nama_produk');
@@ -20,10 +21,10 @@ class CreateProdukTable extends Migration
             $table->text('deskripsi')->nullable();
             $table->integer('harga');
             $table->integer('jumlah_terjual')->default(0);
-            $table->unsignedBigInteger('id_user');
+            $table->unsignedBigInteger('id_user')->unsigned()->nullable();
             $table->timestamps();
 
-            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
+
         });
     }
 

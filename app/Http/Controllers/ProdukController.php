@@ -27,7 +27,7 @@ class ProdukController extends Controller
     {
         // Validasi input
         $request->validate([
-            'nama_produk' => 'required',
+            'nama_produk' => 'required|string|max:255',
             'deskripsi' => 'required',
             'harga' => 'required',
             'foto_produk' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp',

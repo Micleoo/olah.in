@@ -23,7 +23,6 @@
             </ul>
 
             <ul class="navbar-nav ms-auto">
-<<<<<<< Updated upstream
                   @auth
                   <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
@@ -42,10 +41,6 @@
             </li>
 
                   @else 
-                <li class="nav-item">
-                    <a href="/Keranjang" class="nav-link {{ $title === 'Keranjang' ? 'active' : '' }}"><i
-                            class="bi bi-cart"></i></a>
-=======
                 <li class="nav-item dropdown">
                     <a href="/Keranjang" class="nav-link {{ $title === 'Keranjang' ? 'active' : '' }}">
                         <i class="bi bi-cart"></i>
@@ -76,7 +71,6 @@
                             </nav>
                         </div>
                     </div>
->>>>>>> Stashed changes
                 </li>
                 <li class="nav-item ms-auto">
                     <a href="/Login" class="nav-link {{ $title === 'Login' ? 'active' : '' }}"><i

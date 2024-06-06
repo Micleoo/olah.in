@@ -120,7 +120,7 @@
                                 </div>
                                 <div class="col-lg-4 bg-grey">
                                     <div class="p-5">
-                                        <h3 class="fw-bold mb-5 mt-2 pt-1">Ringkasan</h3>
+                                        <h3 class="fw-bold mb-5 mt-2 pt-1 text-black">Ringkasan</h3>
                                         <hr class="my-4">
 
                                         <div class="d-flex justify-content-between mb-4">
@@ -142,51 +142,6 @@
                                                 <label for="pengiriman-cepat">Pengiriman cepat Rp10.000</label>
                                             </div>
                                         </div>
-
-                                        <style>
-                                            .custom-radio {
-                                                position: relative;
-                                                margin-bottom: 10px;
-                                            }
-
-                                            .custom-radio input[type="radio"] {
-                                                position: absolute;
-                                                opacity: 0;
-                                                cursor: pointer;
-                                            }
-
-                                            .custom-radio label {
-                                                cursor: pointer;
-                                                padding-left: 30px;
-                                                position: relative;
-                                                display: inline-block;
-                                            }
-
-                                            .custom-radio label::before {
-                                                content: '';
-                                                position: absolute;
-                                                left: 0;
-                                                top: 50%;
-                                                transform: translateY(-50%);
-                                                width: 20px;
-                                                height: 20px;
-                                                border-radius: 50%;
-                                                border: 2px solid #ccc;
-                                                background-color: #fff;
-                                            }
-
-                                            .custom-radio input[type="radio"]:checked+label::before {
-                                                border-color: #78c2ad;
-                                                background-color: #78c2ad;
-                                            }
-
-                                            .custom-radio input[type="radio"]:checked+label {
-                                                color: #78c2ad;
-                                            }
-                                        </style>
-
-
-
                                         <h5 class="text-uppercase mb-3">Kode Promo</h5>
 
                                         <div class="mb-5">

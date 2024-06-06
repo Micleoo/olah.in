@@ -10,4 +10,4 @@
       <li class="nav-item"><a href="/Kursus" class="nav-link px-2 text-body-secondary">Kursus</a></li>
       <li class="nav-item"><a href="/Marketplace" class="nav-link px-2 text-body-secondary">Market Place</a></li>
     </ul>
-  </footer>
+</footer>

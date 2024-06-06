@@ -16,8 +16,7 @@
                     <a class="nav-link {{ $title === 'Kursus' ? 'active' : '' }}" href="/Kursus">Kursus</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ $title === 'Marketplace' ? 'active' : '' }}" href="/Marketplace">Market
-                        Place</a>
+                    <a class="nav-link {{ $title === 'Marketplace' ? 'active' : '' }}" href="/Marketplace">Market Place</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
@@ -25,11 +24,11 @@
                     <a href="/Keranjang" class="nav-link {{ $title === 'Keranjang' ? 'active' : '' }}"><i
                             class="bi bi-cart"></i></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ms-auto">
                     <a href="/Login" class="nav-link {{ $title === 'Login' ? 'active' : '' }}"><i
                             class="bi bi-box-arrow-in-right"></i>Login</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ms-auto">
                     <a class="nav-link {{ $title === 'Sign-up' ? 'active' : '' }}" href="/Sign-up">Sign-up</a>
                 </li>
             </ul>

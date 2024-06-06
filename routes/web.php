@@ -29,8 +29,8 @@ Route::get('/marketplace', function () {
 })->name('marketplace');
 
 Route::get('/', function () {
-    return view('home', ["title" => "Home"]);
-})->name('home');
+    return view('Home', ["title" => "Home"]);
+})->name('Home');
 
 Route::get('/kursus', [KursusController::class, 'index'])->name('kursus');
 Route::get('/kursus/{id}', [KursusController::class, 'show'])->name('kursus.show');
@@ -42,10 +42,11 @@ Route::get('/kursus', function () {
 })->name('kursus');
 
 
-Route::get('/Login', [LoginController::class, 'index']);
+Route::get('/Login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/Login', [LoginController::class, 'authenticate']);
+Route::post('/Logout', [LoginController::class, 'logout']);
 
-Route::get('/Sign-up', [RegisterController::class, 'index']);
+Route::get('/Sign-up', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/Sign-up', [RegisterController::class, 'store']);
 
 Route::get('/Kursus', function () {

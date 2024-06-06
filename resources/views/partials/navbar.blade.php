@@ -19,7 +19,26 @@
                     <a class="nav-link {{ $title === 'Marketplace' ? 'active' : '' }}" href="/Marketplace">Market Place</a>
                 </li>
             </ul>
+
             <ul class="navbar-nav ms-auto">
+                  @auth
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Welcome Back, {{ auth()->user()->name }}
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+                <li>
+                    <form action="/" method="post">
+                        @csrf
+                        <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Logout</button>
+                    </form>
+                </li>
+              </ul>
+            </li>
+
+                  @else 
                 <li class="nav-item">
                     <a href="/Keranjang" class="nav-link {{ $title === 'Keranjang' ? 'active' : '' }}"><i
                             class="bi bi-cart"></i></a>
@@ -31,7 +50,9 @@
                 <li class="nav-item ms-auto">
                     <a class="nav-link {{ $title === 'Sign-up' ? 'active' : '' }}" href="/Sign-up">Sign-up</a>
                 </li>
-            </ul>
+                @endauth
+            </ul>  
+            
         </div>
     </div>
 </nav>

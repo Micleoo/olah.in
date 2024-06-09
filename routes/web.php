@@ -45,7 +45,8 @@ Route::get('/kursus', function () {
 
 Route::get('/Login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/Login', [LoginController::class, 'authenticate']);
-Route::post('/Logout', [LoginController::class, 'logout']);
+Route::post('/', [LoginController::class, 'logout'])->name('logout');
+
 
 Route::get('/Sign-up', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/Sign-up', [RegisterController::class, 'store']);
@@ -61,14 +62,15 @@ Route::post('/Marketplace/uploadProduk',[ProdukController::class,'store'])->name
 
 
 Route::get('/Keranjang', function () {
-    return view('Keranjang', ["title" => "Keranjang"]);
-});
+    return view('keranjang'); // Assuming keranjang.blade.php exists
+})->name('Keranjang.index');
 
-// Menampilkan semua item dalam keranjang
-Route::get('/Keranjang', [keranjangController::class, 'index'])->name('keranjang.index');
 
-// Menambahkan item ke keranjang
-Route::post('/Keranjang', [KeranjangController::class, 'store'])->name('keranjang.store');
+// // Menampilkan semua item dalam keranjang
+// Route::get('/Keranjang', [keranjangController::class, 'index'])->name('Keranjang.index');
 
-// Menghapus item dari keranjang
-Route::delete('/Keranjang/{id}', [KeranjangController::class, 'destroy'])->name('keranjang.destroy');
+// // Menambahkan item ke keranjang
+// Route::post('/Keranjang', [KeranjangController::class, 'store'])->name('Keranjang.store');
+
+// // Menghapus item dari keranjang
+// Route::delete('/Keranjang/{id}', [keranjangController::class, 'destroy'])->name('Keranjang.destroy');

@@ -11,13 +11,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link {{ $title === 'Home' ? 'active' : '' }}" href="/">Home</a>
+                    <a class="nav-link {{ $title ?? '' === 'Home' ? 'active' : '' }}" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ $title === 'Kursus' ? 'active' : '' }}" href="/Kursus">Kursus</a>
+                    <a class="nav-link {{ $title ?? '' === 'Kursus' ? 'active' : '' }}" href="/Kursus">Kursus</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ $title === 'Marketplace' ? 'active' : '' }}" href="/Marketplace">Market
+                    <a class="nav-link {{ $title ?? '' === 'Marketplace' ? 'active' : '' }}" href="/Marketplace">Market
                         Place</a>
                 </li>
             </ul>
@@ -42,7 +42,7 @@
 
                   @else 
                 <li class="nav-item dropdown">
-                    <a href="/Keranjang" class="nav-link {{ $title === 'Keranjang' ? 'active' : '' }}">
+                    <a href="/Keranjang" class="nav-link {{ $title ?? '' === 'Keranjang' ? 'active' : '' }}">
                         <i class="bi bi-cart"></i>
                     </a>
                     <div class="dropdown-menu">
@@ -73,11 +73,11 @@
                     </div>
                 </li>
                 <li class="nav-item ms-auto">
-                    <a href="/Login" class="nav-link {{ $title === 'Login' ? 'active' : '' }}"><i
+                    <a href="/Login" class="nav-link {{ $title ?? '' === 'Login' ? 'active' : '' }}"><i
                             class="bi bi-box-arrow-in-right"></i>Login</a>
                 </li>
                 <li class="nav-item ms-auto">
-                    <a class="nav-link {{ $title === 'Sign-up' ? 'active' : '' }}" href="/Sign-up">Sign-up</a>
+                    <a class="nav-link {{ $title ?? '' === 'Sign-up' ? 'active' : '' }}" href="/Sign-up">Sign-up</a>
                 </li>
                 @endauth
             </ul>  

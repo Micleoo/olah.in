@@ -46,6 +46,8 @@ Route::get('/kursus', function () {
 
 Route::get('/Login', [LoginController::class, 'index']);
 Route::post('/Login', [LoginController::class, 'authenticate']);
+Route::post('/', [LoginController::class, 'logout'])->name('logout');
+
 
 Route::get('/Sign-up', [RegisterController::class, 'index']);
 Route::post('/Sign-up', [RegisterController::class, 'store']);
@@ -61,9 +63,11 @@ Route::post('/Marketplace/uploadProduk',[ProdukController::class,'store'])->name
 
 
 Route::get('/Keranjang', function () {
-    return view('Keranjang', ["title" => "Keranjang"]);
-});
+    return view('keranjang'); // Assuming keranjang.blade.php exists
+})->name('Keranjang.index');
+
+// Menampilkan semua item dalam keranjang
+Route::get('/Keranjang', [keranjangController::class, 'index'])->name('keranjang.index');
 
 Route::resource('video_lessons', VideoLessonController::class);
-
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\keranjangController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProdukController;
@@ -63,4 +64,11 @@ Route::get('/Keranjang', function () {
     return view('Keranjang', ["title" => "Keranjang"]);
 });
 
+// Menampilkan semua item dalam keranjang
+Route::get('/Keranjang', [keranjangController::class, 'index'])->name('keranjang.index');
 
+// Menambahkan item ke keranjang
+Route::post('/Keranjang', [KeranjangController::class, 'store'])->name('keranjang.store');
+
+// Menghapus item dari keranjang
+Route::delete('/Keranjang/{id}', [KeranjangController::class, 'destroy'])->name('keranjang.destroy');

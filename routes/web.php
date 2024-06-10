@@ -64,6 +64,6 @@ Route::get('/Keranjang', function () {
     return view('Keranjang', ["title" => "Keranjang"]);
 });
 
-
+Route::resource('video_lessons', VideoLessonController::class);
 
 

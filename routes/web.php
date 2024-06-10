@@ -5,6 +5,9 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\KursusController;
+use App\Http\Controllers\VideoLessonController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,8 +37,7 @@ Route::get('/', function () {
 
 Route::get('/kursus', [KursusController::class, 'index'])->name('kursus');
 Route::get('/kursus/{id}', [KursusController::class, 'show'])->name('kursus.show');
-
-
+Route::resource('video_lessons', VideoLessonController::class);
 
 Route::get('/kursus', function () {
     return view('kursus', ["title" => "Kursus"]);
@@ -61,5 +63,7 @@ Route::post('/Marketplace/uploadProduk',[ProdukController::class,'store'])->name
 Route::get('/Keranjang', function () {
     return view('Keranjang', ["title" => "Keranjang"]);
 });
+
+
 
 

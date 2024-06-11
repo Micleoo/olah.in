@@ -68,7 +68,7 @@ header {
   position: relative;
   top: 2rem;
   overflow: hidden;
-  height: 70vh;
+  /* height: 70vh; */
   margin-bottom: 5rem;
 }
 
@@ -195,9 +195,9 @@ article p {
 
 /* Kelas */
 
-section {
+/* section {
   padding: 6rem 0;
-}
+} */
 
 section h2 {
   text-align: center;
@@ -440,6 +440,18 @@ article p {
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
 }
+
+
+/* market Place */
+.icon-hover:hover {
+  border-color: #78c2ad !important;
+  background-color: white !important;
+}
+
+.icon-hover:hover i {
+  color: #66a593 !important;
+}
+
 
 /* Keranjang */
 @media (min-width: 1025px) {

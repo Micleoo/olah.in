@@ -23,65 +23,68 @@
             </ul>
 
             <ul class="navbar-nav ms-auto">
-                  @auth
-                  <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   Welcome Back, {{ auth()->user()->name }}
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        
-                <li>
-                    <form action="/" method="post">
-                        @csrf
-                        <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Logout</button>
-                    </form>
-                </li>
-              </ul>
-            </li>
-
-                  @else 
                 <li class="nav-item dropdown">
                     <a href="/Keranjang" class="nav-link {{ $title ?? '' === 'Keranjang' ? 'active' : '' }}">
                         <i class="bi bi-cart"></i>
                     </a>
                     <div class="dropdown-menu">
-                        <nav class="col-lg-9">
-                            <h5 class="text-dark font-weight-bold mb-3">Keranjang</h5>
-                            <hr class="hr-line">
-                            <ul class="list-unstyled d-flex flex-column gap-2">
-                                <li>
-                                    <a href="#" class="btn d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
-                                        <img src="{{ asset('images/Celengan-botol-plastik.webp') }}" alt="Celengan botol plastik" width="40" height="40">
-                                        <div>
-                                            <strong class="d-block">Celengan botol plastik</strong>
-                                            <small>Rp5.000</small>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="col-lg-auto pe-3">
-                            <nav>
-                                <ul class="d-flex flex-column gap-3 list-unstyled small">
-                                    <li><a href="/Keranjang"
-                                            class="link-offset-2 ">Lihat</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+    <nav class="col-lg-9">
+        <h5 class="text-dark font-weight-bold mb-3">Keranjang</h5>
+        <hr class="hr-line">
+        <ul class="list-unstyled d-flex flex-column gap-2">
+            @foreach ($keranjang ?? [] as $item)
+            <li>
+                <a href="#" class="btn d-flex align-items-start gap-2 py-2 px-3 lh-sm text-start">
+                    <img src="{{ asset('storage/' . $item->product->foto_produk) }}" width="40" height="40"
+                        alt="{{ $item->product->nama_produk }}">
+                    <div>
+                        <span class="fw-bold">{{ $item->product->nama_produk }}</span><br>
+                        <span>Jumlah: {{ $item->jumlah }}</span><br>
+                        <span class="text-muted">Harga: {{ $item->product->harga }}</span>
                     </div>
+                </a>
+            </li>
+            @endforeach
+        </ul>
+    </nav>
+    <div class="col-lg-auto pe-3">
+        <nav>
+            <ul class="d-flex flex-column gap-3 list-unstyled small">
+                <li><a href="{{ route('keranjang.index') }}" class="link-offset-2">Lihat Keranjang</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
                 </li>
-                <li class="nav-item ms-auto">
-                    <a href="/Login" class="nav-link {{ $title ?? '' === 'Login' ? 'active' : '' }}"><i
-                            class="bi bi-box-arrow-in-right"></i>Login</a>
-                </li>
-                <li class="nav-item ms-auto">
-                    <a class="nav-link {{ $title ?? '' === 'Sign-up' ? 'active' : '' }}" href="/Sign-up">Sign-up</a>
-                </li>
+                @auth
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Welcome Back, {{ auth()->user()->name }}
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <li>
+                                <form action="/" method="post">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i>
+                                        Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                @else
+                    <li class="nav-item ms-auto">
+                        <a href="/Login" class="nav-link {{ $title ?? '' === 'Login' ? 'active' : '' }}"><i
+                                class="bi bi-box-arrow-in-right"></i>Login</a>
+                    </li>
+                    <li class="nav-item ms-auto">
+                        <a class="nav-link {{ $title ?? '' === 'Sign-up' ? 'active' : '' }}" href="/Sign-up">Sign-up</a>
+                    </li>
                 @endauth
-            </ul>  
-            
+            </ul>
+
         </div>
     </div>
 </nav>

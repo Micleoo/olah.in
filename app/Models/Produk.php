@@ -28,7 +28,7 @@ class Produk extends Model
     }
     public function keranjang()
     {
-    return $this->hasMany(keranjang::class);
+        return $this->hasMany(Keranjang::class, 'product_id', 'id');
     }
 
 }

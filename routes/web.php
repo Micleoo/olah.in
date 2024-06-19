@@ -6,7 +6,7 @@ use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\KursusController;
 use App\Http\Controllers\VideoLessonController;
-
+use App\Http\Controllers\KeranjangController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +44,7 @@ Route::get('/kursus', function () {
 })->name('kursus');
 
 
-Route::get('/Login', [LoginController::class, 'index']);
+Route::get('/Login', [LoginController::class, 'index'])->name('login');
 Route::post('/Login', [LoginController::class, 'authenticate']);
 Route::post('/', [LoginController::class, 'logout'])->name('logout');
 
@@ -58,16 +58,15 @@ Route::get('/Kursus', function () {
 
 Route::get('/Marketplace',[ProdukController::class,'index'])->name('showMarketPlace');
 Route::get('/Marketplace/uploadProduk',[ProdukController::class,'showUploadProduct'])->name('showUploadProduk');
-
 Route::post('/Marketplace/uploadProduk',[ProdukController::class,'store'])->name('UploadProduk');
 
 
-Route::get('/Keranjang', function () {
-    return view('keranjang'); // Assuming keranjang.blade.php exists
-})->name('Keranjang.index');
-
-// Menampilkan semua item dalam keranjang
-Route::get('/Keranjang', [keranjangController::class, 'index'])->name('keranjang.index');
+// Route untuk menampilkan halaman keranjang
+Route::get('/Keranjang', [KeranjangController::class, 'index'])->name('keranjang.index');
+// Route untuk menyimpan item ke keranjang
+Route::post('/Keranjang', [KeranjangController::class, 'store'])->name('keranjang.store');
+// Route untuk menghapus item dari keranjang
+Route::delete('/Keranjang/{id}', [KeranjangController::class, 'destroy'])->name('keranjang.destroy');
 
 Route::resource('video_lessons', VideoLessonController::class);
 

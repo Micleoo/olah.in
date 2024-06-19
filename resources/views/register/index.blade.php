@@ -27,7 +27,7 @@
 
         <button class="btn btn-primary mt-3 w-100 py-2" type="submit">Sign up</button>
       </form>
-      <small class="d-block text-center mt-3">Sudah punya akun? <a href="/Login">login</a></small>
+      <small class="d-block text-center mt-3">Sudah punya akun? <a href="/Login" class="text-decoration-none" style="color: #049f88;">login</a></small>
     </main>
 
   </div>

@@ -15,22 +15,19 @@ class CreateKeranjangTable extends Migration
     {
         Schema::create('keranjang', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_produk');
-            $table->foreign('id_produk')->references('id')->on('produk')->onDelete('cascade');
             $table->unsignedBigInteger('id_user');
-            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
+            $table->unsignedBigInteger('id_produk');
             $table->integer('jumlah');
             $table->timestamps();
+
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('id_produk')->references('id')->on('produk')->onDelete('cascade');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('keranjang');
     }
+
 }

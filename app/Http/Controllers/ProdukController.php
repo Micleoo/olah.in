@@ -23,6 +23,12 @@ class ProdukController extends Controller
         return View('uploadProduct', ['title' => $title]);
     }
 
+    public function show($id)
+    {
+        $product = Produk::findOrFail($id);
+        return view('produk.show', compact('product'));
+    }
+
     public function store(Request $request)
     {
         // Validasi input

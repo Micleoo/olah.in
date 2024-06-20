@@ -59,7 +59,7 @@ Route::get('/Kursus', function () {
 Route::get('/Marketplace',[ProdukController::class,'index'])->name('showMarketPlace');
 Route::get('/Marketplace/uploadProduk',[ProdukController::class,'showUploadProduct'])->name('showUploadProduk');
 Route::post('/Marketplace/uploadProduk',[ProdukController::class,'store'])->name('UploadProduk');
-
+Route::get('/produk/{id}', [ProdukController::class, 'show'])->name('produk.show');
 
 // Route untuk menampilkan halaman keranjang
 Route::get('/Keranjang', [KeranjangController::class, 'index'])->name('keranjang.index');

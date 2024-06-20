@@ -10,8 +10,13 @@
                             <h1 style="font-weight: 600; font-size: 28px;">Semua produk</h1>
                         </div>
                         <div class="col-auto">
-                            <a class="btn btn-primary" href="/Marketplace/uploadProduk"
-                                style="background-color: #05c9ac;">Upload Produk</a>
+                            @auth
+                                <a class="btn btn-primary" href="/Marketplace/uploadProduk"
+                                    style="background-color: #05c9ac;">Upload Produk</a>
+                            @else
+                                <a class="btn btn-primary" href="{{ route('login') }}"
+                                    style="background-color: #05c9ac;">Upload Produk</a>
+                            @endauth
                         </div>
                     </div>
                     <hr style="border-top: 2px solid #737373; margin-bottom: 30px;">
@@ -66,7 +71,8 @@
                                     </a>
                                 @endif
 
-                                <a class="btn btn-primary" href="#">Lihat Detail</a>
+                                <a class="btn btn-primary" href="{{ route('produk.show', $product->id) }}">Lihat Detail</a>
+
                             </div>
                         </div>
                     </div>
